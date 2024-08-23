@@ -1,8 +1,7 @@
 def all_thing_is_obj(object: any) -> int:
     # print(object.__class__)
     data = object.__class__
-    data_type = str(data)
-    dt = data_type.split("'")[1]
+    dt = object.__class__.__name__
     if dt == "int":
         print("Type not found")
         return 42
