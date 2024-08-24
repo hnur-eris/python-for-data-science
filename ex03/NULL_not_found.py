@@ -22,4 +22,4 @@ def print_names(class_name: str) -> str:
 
 #float kısmında type not found basıyo
 #bunun haricinde doğru çalışıyo
-
+#tester.py silmeyi unutma
