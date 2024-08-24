@@ -9,3 +9,5 @@ def all_thing_is_obj(object: any) -> int:
     print(f"{dt.capitalize()} : {data}") if dt.capitalize() != "Str"  else print(f"{object} is in the kitchen : {data}")
     return 42
 #tester.py dosyası silinmeli
+
+# all_thing_is_obj("merhaba")
