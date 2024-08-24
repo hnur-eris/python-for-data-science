@@ -5,7 +5,7 @@ try:
     if len(ac) == 1:
         exit(0) 
 
-    assert len(ac) < 3, "more than one argument is provided"
+    assert len(ac) <= 3, "more than one argument is provided"
     data = sys.argv[1]
     assert data.lstrip("-").isdigit(), "argument is not an integer"
     number = int(data)
