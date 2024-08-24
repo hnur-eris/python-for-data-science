@@ -1,12 +1,12 @@
 def all_thing_is_obj(object: any) -> int:
-    # print(object.__class__)
+    o_types = ["list", "tuple", "set", "dict", "str"]
+    
     data = object.__class__
     dt = object.__class__.__name__
-    if dt == "int":
-        print("Type not found")
-        return 42
-
-    print(f"{dt.capitalize()} : {data}") if dt.capitalize() != "Str"  else print(f"{object} is in the kitchen : {data}")
+    if dt in o_types:
+        print(f"{dt.capitalize()} : {data}") if dt.capitalize() != "Str"  else print(f"{object} is in the kitchen : {data}")
+    else:
+        print(f"Type not found")
     return 42
 #tester.py dosyası silinmeli
 
