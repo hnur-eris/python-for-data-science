@@ -19,3 +19,5 @@ Generator fonksiyonlar her kullanıldığında yield saolsun bir öncekine nazar
 
 yield kullanıldığında o değişkenler memory de yer kaplamaz Havada durur gibi düşünülebilir sadece ihtiyaç anında kullanılabilir
 Ama bellekte tutulmadığı için değişken değeri için her seferinde en baştan alınır
+
+iterator: iterasyon yapılacak liste, dizi veya başka bir iterable tür döndürür (list tuple felan)
