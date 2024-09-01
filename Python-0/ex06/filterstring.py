@@ -19,7 +19,8 @@ def main():
         # filtered_words = list(filter(lambda x: len(x) > number, words))
         filtered_words = list(ft_filter(lambda x: len(x) > number, words))
         print(filtered_words)
-
+        list_version = [word for word in words if (lambda x: len(x) > number)(word)]
+        print("real version: ",list_version)
     except AssertionError as msg:
         print(f"AssertionError: {msg}")
         exit()
