@@ -3,11 +3,11 @@ import sys
 
 def analyse(txt: str) -> dict:
     """
-This function takes a string as input and returns a
-dictionary containing the counts of
-uppercase letters, lowercase letters,
-punctuation marks, spaces, and digits within the string.
-"""
+    This function takes a string as input and returns a
+    dictionary containing the counts of
+    uppercase letters, lowercase letters,
+    punctuation marks, spaces, and digits within the string.
+    """
     values = {'upper': 0, 'lower': 0, 'punctuation': 0,
               'spaces': 0, 'digits': 0}
     for char in txt:
@@ -55,4 +55,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# space kısmında sorun var galiba
