@@ -12,7 +12,6 @@ ft_set.remove("tutu!")
 ft_set.remove("Hello")
 ft_set.add("Hello")
 ft_set.add("Istanbul!")
-#garip çalışıyo enteresan
 
 
 ft_dict["Hello"] = "42Istanbul!"
