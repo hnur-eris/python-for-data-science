@@ -1,6 +1,5 @@
 # 60 bu progress bar uzunluğu istersen değiştir
 def ft_tqdm(lst: range) -> None:
-    print("my function")
     length = len(lst)
     for i, item in enumerate(lst, start=1):
         percent = (i / length) * 100
