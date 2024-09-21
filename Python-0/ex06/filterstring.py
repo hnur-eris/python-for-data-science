@@ -11,6 +11,9 @@ def handle_error():
 
 
 def main():
+    """
+    This is main function
+    """
     try:
         handle_error()
         txt = sys.argv[1]

@@ -1,7 +1,7 @@
 import sys
-ac = sys.argv
 
 try:
+    ac = sys.argv
     if len(ac) == 1:
         exit(0) 
     assert len(ac) < 3, "more than one argument is provided"

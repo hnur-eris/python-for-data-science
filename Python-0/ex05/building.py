@@ -26,7 +26,7 @@ def analyse(txt: str) -> dict:
 
 def print_analysis(data: dict, txt: str):
     """
-    it allows all relevant information
+    It allows all relevant information
     to be written with the letters in the text
     """
     print(f"The text contains {len(txt)} characters:")
@@ -38,6 +38,9 @@ def print_analysis(data: dict, txt: str):
 
 
 def main():
+    """
+    This is main function.
+    """
     if len(sys.argv) == 1:
         text = input("What is the text to count?\n")
 

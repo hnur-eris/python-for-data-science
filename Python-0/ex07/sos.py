@@ -2,6 +2,11 @@ import sys
 
 
 def convert(data: str) -> str:
+    """
+    This function converts the incoming character to
+    its equivalent in Morse code.
+    """
+
     morse_alpha = {
         " ": "/ ",
         "A": ".- ",
@@ -49,6 +54,9 @@ def convert(data: str) -> str:
 
 
 def main():
+    """
+    This is main function
+    """
     try:
         assert len(sys.argv) == 2, "the arguments are bad"
         txt = sys.argv[1]
