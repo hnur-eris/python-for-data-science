@@ -8,4 +8,3 @@ def all_thing_is_obj(object: any) -> int:
     else:
         print(f"Type not found")
     return 42
-#tester.py dosyası silinmeli
