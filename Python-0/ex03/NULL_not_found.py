@@ -19,5 +19,3 @@ def NULL_not_found(object: any) -> int:
 
 def print_names(class_name: str) -> str:
     return no_names.get(class_name)
-
-#tester.py silmeyi unutma
