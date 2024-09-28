@@ -5,8 +5,8 @@ import os
 
 
 def error_handle(path: str):
-    assert not path.endswith(("jpg", "jpeg")), "Doesn't match expected format"
-    assert not os.path.exists(path), "File doesn't found"
+    assert path.endswith(("jpg", "jpeg")), "Doesn't match expected format"
+    assert os.path.exists(path), "File doesn't found"
 
 
 def ft_load(path: str) -> array:
