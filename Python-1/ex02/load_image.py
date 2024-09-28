@@ -5,11 +5,18 @@ import os
 
 
 def error_handle(path: str):
+    """
+        Checks if the given file path is valid.
+    """
     assert path.endswith(("jpg", "jpeg")), "Doesn't match expected format"
     assert os.path.exists(path), "File doesn't found"
 
 
 def ft_load(path: str) -> array:
+    """
+        Loads an image from the specified
+        file path and converts it to a NumPy array.
+    """
     try:
         error_handle(path)
     except AssertionError as e:

@@ -6,17 +6,30 @@ import matplotlib.pyplot as plt
 
 
 class ImageZoomer:
+    """
+        A class to handle image zooming functionality.
+    """
     def __init__(self, image_path):
+        """
+            Initializes the ImageZoomer with the image at the given path.
+        """
         self.img = Image.open(image_path)
         self.zoom_factor = 1.0
 
     def zoom_image(self):
+        """
+            Resizes the image according to the
+            current zoom factor and returns an image
+        """
         new_size = (int(self.img.size[0] * self.zoom_factor),
                     int(self.img.size[1] * self.zoom_factor))
         resized_image = self.img.resize(new_size)
         return resized_image
 
     def on_press(self, key):
+        """
+            Handles key press events for zooming in and out.
+        """
         try:
             if key.char == '+':
                 self.zoom_factor += 0.1
@@ -31,6 +44,13 @@ class ImageZoomer:
 
 
 def main():
+    """
+        Main function to run the image zooming application.
+
+        Initializes the ImageZoomer with a specified image,
+        starts the keyboard listener for zooming controls,
+        and continuously updates and displays the zoomed image.
+    """
     zoomer = ImageZoomer("animal.jpeg")
 
     with keyboard.Listener(on_press=zoomer.on_press) as listener:

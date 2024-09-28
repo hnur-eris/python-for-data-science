@@ -14,6 +14,8 @@ def control(height: list, weight: list):
     if len(height) != len(weight):
         raise ValueError("Height and weight lists must be of the same length.")
 
+    """    Validates the height and weight lists. """
+
 
 def give_bmi(height: list[int | float],
              weight: list[int | float]) -> list[int | float]:
@@ -29,6 +31,7 @@ def give_bmi(height: list[int | float],
     h_arr = np.array(height)
     w_arr = np.array(weight)
     bmi_value = w_arr / h_arr ** 2
+    """    Calculates BMI values for given height and weight lists."""
     return bmi_value.tolist()
 
 
@@ -42,4 +45,5 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
     except TypeError as e:
         print(e)
         exit()
+    """    Applies a limit to the BMI values and returns a list of booleans."""
     return [b > limit for b in bmi]

@@ -2,6 +2,9 @@ import numpy as np
 
 
 def slice_me(family: list, start: int, end: int) -> list:
+    """
+    Slices a list of lists (2D array) from the specified
+    start index to the end index."""
     try:
         if not isinstance(family, list) \
              or not isinstance(start, int) or not isinstance(end, int):
