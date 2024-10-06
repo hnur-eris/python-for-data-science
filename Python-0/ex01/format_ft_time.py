@@ -7,4 +7,4 @@ print(f"Second since January 1, 1970: {number[:1]},{number[1:4]},{number[4:7]},{
 
 date2 = time.ctime()
 new_data = date2.split(" ")
-print(new_data[1], new_data[2], new_data[4])
+print(new_data[1], new_data[3], new_data[-1])
