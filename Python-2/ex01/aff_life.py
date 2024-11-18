@@ -13,15 +13,16 @@ def main():
         data = dataset[dataset['country'] == 'Turkey']
         years = data.columns[1:]
         life_expectancy = data.values[0][1:]
-        plt.plot(years, life_expectancy, label='Turkey')
+        plt.plot(years, life_expectancy)
         plt.title('Life Expectancy in Turkey Over the Years')
         plt.xlabel('Year')
-        plt.xticks(years[::40])  # choosing every 40. elements
+        plt.xticks(years[::40])
         plt.ylabel('Life Expectancy')
         try:
             plt.show()
         except (Exception, KeyboardInterrupt) as e:
             print(f"Error: {e}")
+            exit(0)
 
 
 if __name__ == "__main__":
