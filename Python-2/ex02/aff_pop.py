@@ -49,6 +49,9 @@ def add_suffix(value: int) -> str:
 
 
 def process_popu(dataset, country):
+    """
+        This function gives the population values for a given country
+    """
     if dataset is not None:
         data = dataset[dataset["country"] == country]
         years = data.columns[1:]
