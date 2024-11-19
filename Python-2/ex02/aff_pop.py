@@ -61,7 +61,7 @@ def main():
     """
         Loads the population dataset,
         filters the data for France and Turkey,
-        and plots the population over the years.
+        and plots the population over the years
     """
     dataset = load("population_total.csv")
 
