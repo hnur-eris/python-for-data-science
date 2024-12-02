@@ -26,28 +26,6 @@ def str_to_int(value: str) -> int:
         return int(value)
 
 
-def add_suffix(value: int) -> str:
-    """
-    Format population values with suffixes like 'M' for millions.
-
-    Parameters:
-    ----------
-    value : int
-        The numeric value to format.
-
-    Returns:
-    ----------
-    str
-        The formatted string with a suffix.
-    """
-    if value >= 1_000_000:
-        return f'{value // 1_000_000}M'
-    elif value >= 1_000:
-        return f'{value // 1_000}K'
-    else:
-        return str(value)
-
-
 def process_popu(dataset, country):
     """
         This function gives the population values for a given country
@@ -77,7 +55,7 @@ def main():
     plt.title("Population Projections")
 
     ticks = [0, 2e7, 4e7, 6e7]
-    plt.yticks(ticks, [add_suffix(tick) for tick in ticks])
+    plt.yticks(ticks, ['0', '20M', '40M', '60M'])
 
     plt.legend()
 
