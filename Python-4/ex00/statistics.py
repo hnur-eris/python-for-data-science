@@ -1,8 +1,9 @@
 
 class Arithmetic():
-    def __init__(self, number:list[float]):
+    def __init__(self, number: list):
         self.number = sorted(list(number))
         self.len = len(number)
+
     def mean(self):
         return sum(self.number) / self.len
 
@@ -14,19 +15,25 @@ class Arithmetic():
         else:
             res = self.number[self.len // 2]
         print(f"median : {res}")
-    
+
     def quartile(self):
         f_quarter = self.len // 4
         s_quarter = f_quarter + self.len // 2
-        print(f"quartile : [{float(self.number[f_quarter])}, {float(self.number[s_quarter])}]")        
+        print(
+            "quartile :",
+            f"[{float(self.number[f_quarter])}",
+            f"{float(self.number[s_quarter])}]"
+        )
 
     def var(self):
         mean = self.mean()
         variance = sum((x - mean) ** 2 for x in self.number) / self.len
         return variance
+
     def std(self):
         std_dev = self.var() ** 0.5
         print(f"std : {std_dev}")
+
 
 def ft_statistics(*args: any, **kwargs: any) -> None:
 
